@@ -28,11 +28,16 @@ $gilroy-b: 'Gilroy-Bold';
 $gilroy-m: 'Gilroy-Medium';
 $gilroy-sb: 'Gilroy-SemiBold';
 $text-color: #313131;
-$green: #49AD09;;
+$green: #49AD09;
+$inter: 'Inter';
 
 @import './_default';
 @import './mixin';
 
+.header{
+	background: #F2F2F2;
+	min-height: 900px;
+}
 .logo{
 	font-family: $gilroy-b;
 	font-size: 1.125rem;
@@ -42,6 +47,7 @@ $green: #49AD09;;
 .navbar{
 	@include space-between;
 	padding: 30px 0 160px 0;
+	margin-bottom: 130px;
 }
 .nav{
 	position: fixed;
@@ -76,7 +82,7 @@ $green: #49AD09;;
 		color: $text-color;
 	}
 	&__btn--green{
-		padding: 18px 45px;
+		padding: 18px 34px;
 		background-color: $green;
 		color: #fff;
 		border-radius: 5px;
@@ -88,4 +94,54 @@ $green: #49AD09;;
 }
 .hamburger{
 	display: block;
+}
+.banner{
+	&__info{
+		text-align: center;
+	}
+	&__title{
+		font-family: $inter;
+		font-weight: 800;
+		font-size: 4.875rem;
+		line-height: 5rem;
+		letter-spacing: -0.05em;
+		color: $text-color;
+		max-width: 702px;
+		margin: 0 auto;
+		margin-bottom: 2.25rem;
+		&-span{
+			color: $green;
+		}
+	}
+	&__text{
+		font-size: 1.125rem;
+		color: $text-color;
+		line-height: 148%;
+		max-width: 457px;
+		margin: 0 auto;
+		margin-bottom: 3.9375rem;
+	}
+	&__buttons{
+		@include flex-center;
+		flex-direction: column;
+	}
+	&__btn{
+		font-size: 1.125rem;
+		line-height: 1.3125rem;
+		text-decoration-line: underline;
+		color: #514040;
+	}
+	&__btn--green{
+		text-decoration: none;
+		padding: 1.125rem 4.0625rem;
+		background: $green;
+		font-size: 1.125rem;
+		line-height: 1.3125rem;
+		color: #FFFFFF;
+		border-radius: 5px;
+		margin-bottom: 1.875rem;
+	}
+	&__span{
+		margin-left: 0.8125rem;
+	}
 }

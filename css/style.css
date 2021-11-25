@@ -69,6 +69,11 @@ body.lock {
   overflow-x: hidden;
 }
 
+.header {
+  background: #F2F2F2;
+  min-height: 900px;
+}
+
 .logo {
   font-family: "Gilroy-Bold";
   font-size: 1.125rem;
@@ -81,6 +86,7 @@ body.lock {
   align-items: center;
   justify-content: space-between;
   padding: 30px 0 160px 0;
+  margin-bottom: 130px;
 }
 
 .nav {
@@ -123,7 +129,7 @@ body.lock {
   color: #313131;
 }
 .nav__btn--green {
-  padding: 18px 45px;
+  padding: 18px 34px;
   background-color: #49AD09;
   color: #fff;
   border-radius: 5px;
@@ -136,6 +142,57 @@ body.lock {
 
 .hamburger {
   display: block;
+}
+
+.banner__info {
+  text-align: center;
+}
+.banner__title {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 4.875rem;
+  line-height: 5rem;
+  letter-spacing: -0.05em;
+  color: #313131;
+  max-width: 702px;
+  margin: 0 auto;
+  margin-bottom: 2.25rem;
+}
+.banner__title-span {
+  color: #49AD09;
+}
+.banner__text {
+  font-size: 1.125rem;
+  color: #313131;
+  line-height: 148%;
+  max-width: 457px;
+  margin: 0 auto;
+  margin-bottom: 3.9375rem;
+}
+.banner__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner__btn {
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  text-decoration-line: underline;
+  color: #514040;
+}
+.banner__btn--green {
+  text-decoration: none;
+  padding: 1.125rem 4.0625rem;
+  background: #49AD09;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 1.875rem;
+}
+.banner__span {
+  margin-left: 0.8125rem;
 }
 
 /*# sourceMappingURL=style.css.map */
