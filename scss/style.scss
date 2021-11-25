@@ -1,2 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@font-face{
+	font-family: 'Gilroy-Bold';
+	src: local('Gilroy Bold'),
+	url(../fonts/Gilroy-Bold.woff);
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: 'Gilroy-Medium';
+	src: local('Gilroy Medium'),
+	url(../fonts/Gilroy-Medium.woff);
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: 'Gilroy-SemiBold';
+	src: local('Gilroy SemiBold'),
+	url(../fonts/Gilroy-SemiBold.woff);
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+$gilroy-b: 'Gilroy-Bold';
+$gilroy-m: 'Gilroy-Medium';
+$gilroy-sb: 'Gilroy-SemiBold';
+$text-color: #313131;
+$green: #49AD09;;
+
 @import './_default';
 @import './mixin';
+
+.logo{
+	font-family: $gilroy-b;
+	font-size: 1.125rem;
+	line-height: 1.3125rem;
+	color: $text-color;
+}
+.navbar{
+	@include space-between;
+	padding: 30px 0 160px 0;
+}
+.nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	transition: .4s ease-in-out;
+	transform: translateY(-100%);
+	background: #ccc;
+	@include flex-center;
+	flex-direction: column;
+	&__links{
+		@include flex-center;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+	&__link{
+		margin-bottom: 1.875rem;
+		font-size: 1.125rem;
+		line-height: 1.3125rem;
+		color: $text-color;
+	}
+	&__buttons{
+		@include flex-center;
+		flex-direction: column;
+	}
+	&__btn{
+		margin-bottom: 0.9375rem;
+		font-size: 1.125rem;
+		line-height: 1.3125rem;
+		color: $text-color;
+	}
+	&__btn--green{
+		padding: 18px 45px;
+		background-color: $green;
+		color: #fff;
+		border-radius: 5px;
+		box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+	}
+}
+.nav.active{
+	transform: translateY(0);
+}
+.hamburger{
+	display: block;
+}
