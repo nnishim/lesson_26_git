@@ -6,6 +6,17 @@
     margin: 0;
     margin-right: 2.1875rem;
   }
+
+  .company__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .company__logo {
+    margin: 0;
+  }
+  .company__logo:first-child {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 992px) {
   .hamburger {
@@ -37,9 +48,14 @@
     margin: 0;
     margin-right: 0.9375rem;
   }
+  .nav__btn--green {
+    margin: 0;
+  }
 
   .banner {
-    background: url(../img/bg.png), url(../img/bgright.png) left center no-repeat/cover, right center no-repeat/cover;
+    width: 100%;
+    padding-top: 6.9375rem;
+    background: url(../img/bg.png) left center no-repeat, url(../img/bgright.png) right center no-repeat;
   }
 }
 

@@ -85,8 +85,7 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0 160px 0;
-  margin-bottom: 130px;
+  padding: 1.875rem 0 10rem 0;
 }
 
 .nav {
@@ -108,7 +107,7 @@ body.lock {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .nav__link {
   margin-bottom: 1.875rem;
@@ -129,7 +128,7 @@ body.lock {
   color: #313131;
 }
 .nav__btn--green {
-  padding: 18px 34px;
+  padding: 18px 42px;
   background-color: #49AD09;
   color: #fff;
   border-radius: 5px;
@@ -144,6 +143,9 @@ body.lock {
   display: block;
 }
 
+.banner {
+  padding-bottom: 6.25rem;
+}
 .banner__info {
   text-align: center;
 }
@@ -190,9 +192,24 @@ body.lock {
   color: #FFFFFF;
   border-radius: 5px;
   margin-bottom: 1.875rem;
+  box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
 }
 .banner__span {
   margin-left: 0.8125rem;
+}
+
+.company__content {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.company__logo {
+  margin-bottom: 1.875rem;
+}
+.company__logo:first-child {
+  margin-top: 3.125rem;
 }
 
 /*# sourceMappingURL=style.css.map */

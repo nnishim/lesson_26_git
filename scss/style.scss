@@ -46,8 +46,7 @@ $inter: 'Inter';
 }
 .navbar{
 	@include space-between;
-	padding: 30px 0 160px 0;
-	margin-bottom: 130px;
+	padding: 1.875rem 0 10rem 0;
 }
 .nav{
 	position: fixed;
@@ -63,7 +62,7 @@ $inter: 'Inter';
 	&__links{
 		@include flex-center;
 		flex-direction: column;
-		margin-bottom: 15px;
+		margin-bottom: 0.9375rem;
 	}
 	&__link{
 		margin-bottom: 1.875rem;
@@ -82,7 +81,7 @@ $inter: 'Inter';
 		color: $text-color;
 	}
 	&__btn--green{
-		padding: 18px 34px;
+		padding: 18px 42px;
 		background-color: $green;
 		color: #fff;
 		border-radius: 5px;
@@ -96,6 +95,7 @@ $inter: 'Inter';
 	display: block;
 }
 .banner{
+	padding-bottom: 6.25rem;
 	&__info{
 		text-align: center;
 	}
@@ -140,8 +140,23 @@ $inter: 'Inter';
 		color: #FFFFFF;
 		border-radius: 5px;
 		margin-bottom: 1.875rem;
+		box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
 	}
 	&__span{
 		margin-left: 0.8125rem;
+	}
+}
+
+.company{
+	&__content{
+		min-height: 180px;
+		@include flex-center;
+		flex-direction: column;
+	}
+	&__logo{
+		margin-bottom: 1.875rem;
+		&:first-child{
+			margin-top: 3.125rem;
+		}
 	}
 }
