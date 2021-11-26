@@ -28,6 +28,7 @@ $gilroy-b: 'Gilroy-Bold';
 $gilroy-m: 'Gilroy-Medium';
 $gilroy-sb: 'Gilroy-SemiBold';
 $text-color: #313131;
+$brown: #514040;
 $green: #49AD09;
 $inter: 'Inter';
 
@@ -129,7 +130,7 @@ $inter: 'Inter';
 		font-size: 1.125rem;
 		line-height: 1.3125rem;
 		text-decoration-line: underline;
-		color: #514040;
+		color: $brown;
 	}
 	&__btn--green{
 		text-decoration: none;
@@ -148,6 +149,7 @@ $inter: 'Inter';
 }
 
 .company{
+	margin-bottom: 8.75rem;
 	&__content{
 		min-height: 180px;
 		@include flex-center;
@@ -158,5 +160,21 @@ $inter: 'Inter';
 		&:first-child{
 			margin-top: 3.125rem;
 		}
+	}
+}
+.cards{
+	&__info{
+		text-align: center;
+	}
+	&__question{
+		font-size: 1.125rem;
+		line-height: 1.3125rem;
+		color: $brown;
+		margin-bottom: 1.875rem;
+	}
+	&__title{
+		color: $text-color;
+		font-size: 2.8125rem;
+		line-height: 3.3125rem;
 	}
 }

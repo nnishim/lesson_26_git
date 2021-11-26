@@ -198,6 +198,9 @@ body.lock {
   margin-left: 0.8125rem;
 }
 
+.company {
+  margin-bottom: 8.75rem;
+}
 .company__content {
   min-height: 180px;
   display: flex;
@@ -210,6 +213,21 @@ body.lock {
 }
 .company__logo:first-child {
   margin-top: 3.125rem;
+}
+
+.cards__info {
+  text-align: center;
+}
+.cards__question {
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #514040;
+  margin-bottom: 1.875rem;
+}
+.cards__title {
+  color: #313131;
+  font-size: 2.8125rem;
+  line-height: 3.3125rem;
 }
 
 /*# sourceMappingURL=style.css.map */
